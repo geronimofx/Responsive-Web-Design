@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build a Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 id="title">Profile Reseach</h1>
+    <p id="description">
+        Let us know your profile as a develper.
+    </p>
+    <form id="survey-form">
+        <label id="name-label">Name</label>
+        <input id="name" type="text" placeholder="Enter your full name" required>
+        <label id="email-label">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+        <label id="number-label">Age</label>
+        <input type="number" name="number" id="number" min="18" max="70" placeholder="How old are you?" required>
+        <label>How long have you been programming?</label>
+        <select name="dropdown " id="dropdown">
+            <option value="1">0-1 years</option>
+            <option value="2">2-5 years</option>
+            <option value="3">5-10 years</option>
+            <option value="4">10 years or more</option>
+        </select>
+        <label>What is your seniority level?</label>
+        <input type="radio" name="seniority" value="intern" >Intern
+        <input type="radio" name="seniority" value="junior">Júnior
+        <input type="radio" name="seniority" value="pleno">Pleno
+        <input type="radio" name="seniority" value="senior">Sênior
+        <label>Which of the following languages are you familiar with?</label>
+        <input type="checkbox" value="javascript">Javascript
+        <input type="checkbox" value="node">Node Js
+        <input type="checkbox" value="typescript">Typescript
+        <input type="checkbox" value="react">React Js
+        <input type="checkbox" value="next">Next Javascript
+        <input type="checkbox" value="java">Java
+        <input type="checkbox" value="php">PHP
+        <label>Tell us more about you.</label>
+        <textarea cols="30" rows="10"></textarea>
+        <input type="submit" id="submit" value="Submit" class="button">
+    </form>
+</body>

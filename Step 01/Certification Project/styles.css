@@ -1,0 +1,54 @@
+body {
+    height: 100%;
+    width: 100vw;
+    align-items: center;
+    background-color: #1A0E5D;
+    color: #FFFFFF;
+}
+
+h1, p {
+    margin: 1rem auto;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form label {
+    margin: 1rem 0 0.5rem 0;
+    font-size: 1.25rem;
+    display: block;
+}
+
+input {
+    height: 1rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 7px;
+}
+
+input[type="text"] {
+    text-transform: capitalize;
+}
+
+select {
+    cursor: pointer;
+    height: 2rem;
+    padding: 0 0 0 0.5rem;
+    display: inline;
+}
+
+textarea {
+    resize: none;
+}
+
+.button {
+    margin: 1rem 0;
+    height: 2rem;
+
+}
