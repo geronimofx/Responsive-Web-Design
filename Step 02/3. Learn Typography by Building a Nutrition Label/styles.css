@@ -30,6 +30,7 @@ p {
 .divider {
     border-bottom: 1px solid #888989;
     margin: 2px 0;
+    clear: right;
 }
 
 .bold {
@@ -51,7 +52,7 @@ p {
 }
 
 .md {
-    height: 5px
+    height: 5px;
 }
 
 .sm-text {
@@ -66,4 +67,23 @@ p {
 .calories-info span {
     font-size: 1.2em;
     margin-top: -7px;
+}
+
+.indent {
+    margin-left: 1em;
+}
+
+.dbl-indent {
+    margin-left: 2em;
+}
+
+.daily-value p:not(.no-divider) {
+    border-bottom: 1px solid #888989;
+}
+
+.note {
+    font-size: 0.6rem;
+    margin: 5px 0;
+    padding: 0 8px;
+    text-indent: -8px;
 }
