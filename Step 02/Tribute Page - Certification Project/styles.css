@@ -1,152 +1,100 @@
-span[class~="sr-only"] {
-    border: 0 !important;
-    clip: rect(1px, 1px, 1px, 1px) !important;
-    clip-path: inset(50%) !important;
-    -webkit-clip-path: inset(50%) !important;
-    height: 1px !important;
-    width: 1px !important;
-    position: absolute !important;
-    overflow: hidden !important;
-    white-space: nowrap !important;
-    padding: 0 !important;
-    margin: -1px !important;
-}
-
 html {
-    box-sizing: border-box;
+    /* Setting a base font size of 10px give us easier rem calculations
+        Info: 1rem === 10px, 1.5rem === 15px, 2rem === 20px and so forth
+     */
+    font-size: 10px;
 }
 
 body {
-    font-family: sans-serif;
-    color: #0a0a23;
+    /* Native font stack https://getbootstrap.com/docs/4.2/content/reboot/#native-font-stack */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+        'Helvetica Neue', Arial, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-align: center;
+    color: #333;
+    margin: 0;
 }
 
 h1 {
-    max-width: 37.25rem;
-    margin: 0 auto;
-    padding: 1.5rem 1.25rem;
+    font-size: 4rem;
+    margin-bottom: 0;
 }
 
-h1 .flex {
-    display: flex;
-    flex-direction: column-reverse;
-    gap: 1rem;
+@media (max-width: 460px) {
+    h1 {
+        font-size: 3.5rem;
+        line-height: 1.2;
+    }
 }
 
-h1 .flex span:first-of-type {
-    font-size: 0.7em;
+h2 {
+    font-size: 3.25rem;
 }
 
-h1 .flex span:last-of-type {
-    font-size: 1.2em;
+a {
+    color: #477ca7;
 }
 
-section {
-    max-width: 40rem;
-    margin: 0 auto;
-    border: 2px solid #d0d0d5;
+a:visited {
+    color: #74638f;
 }
 
-#years {
-    display: flex;
-    justify-content: flex-end;
-    position: sticky;
-    top: 0;
-    background: #0a0a23;
-    color: #fff;
-    z-index: 999;
-    padding: 0.5rem calc(1.25rem + 2px) 0.5rem 0;
-    margin: 0 -2px;
+#main {
+    margin: 30px 8px;
+    padding: 15px;
+    border-radius: 5px;
+    background: #eee;
 }
 
-#years span[class] {
-    font-weight: bold;
-    width: 4.5rem;
-    text-align: right;
+@media (max-width: 460px) {
+    #main {
+        margin: 0;
+    }
 }
 
-.table-wrap {
-    padding: 0 0.75rem 1.5rem 0.75rem;
-}
-
-table {
-    border-collapse: collapse;
-    border: 0;
-    width: 100%;
-    position: relative;
-    margin-top: 3rem;
-}
-
-table caption {
-    color: #356eaf;
-    font-size: 1.3em;
-    font-weight: normal;
-    position: absolute;
-    top: -2.25rem;
-    left: 0.5rem;
-}
-
-tbody td {
-    width: 100vw;
-    min-width: 4rem;
-    max-width: 4rem;
-}
-
-tbody th {
-    width: calc(100% - 12rem);
-}
-
-tr[class="total"] {
-    border-bottom: 4px double #0a0a23;
-    font-weight: bold;
-}
-
-tr[class="total"] th {
-    text-align: left;
-    padding: 0.5rem 0 0.25rem 0.5rem;
-}
-
-tr.total td {
-    text-align: right;
-    padding: 0 0.25rem;
-}
-
-tr.total td:nth-of-type(3) {
-    padding-right: 0.5rem;
-}
-
-tr.total:hover {
-    background-color: #99c9ff;
-}
-
-td.current {
-    font-style: italic;
-}
-
-tr.data {
-    background-image: linear-gradient(to bottom, #dfdfe2 1.845rem, white 1.845rem);
-}
-
-tr.data th {
-    text-align: left;
-    padding-top: 0.3rem;
-    padding-left: 0.5rem;
-}
-
-tr.data th .description {
+img {
+    max-width: 100%;
     display: block;
-    font-weight: normal;
+    height: auto;
+    margin: 0 auto;
+}
+
+#img-div {
+    background: white;
+    padding: 10px;
+    margin: 0;
+}
+
+#img-caption {
+    margin: 15px 0 5px 0;
+}
+
+@media (max-width: 460px) {
+    #img-caption {
+        font-size: 1.4rem;
+    }
+}
+
+#headline {
+    margin: 50px 0;
+    text-align: center;
+}
+
+ul {
+    max-width: 550px;
+    margin: 0 auto 50px auto;
+    text-align: left;
+    line-height: 1.6;
+}
+
+li {
+    margin: 16px 0;
+}
+
+blockquote {
     font-style: italic;
-    padding: 1rem 0 0.75rem;
-    margin-right: -13.5rem;
-}
-
-tr.data td {
-    vertical-align: top;
-    padding: 0.3rem 0.25rem 0;
-    text-align: right;
-}
-
-tr.data td:last-of-type {
-    padding-right: 0.5rem;
+    max-width: 545px;
+    margin: 0 auto 50px auto;
+    text-align: left;
 }
